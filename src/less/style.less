@@ -1,25 +1,23 @@
 @charset "UTF-8";
 
-// Core variables and mixins
-@import (reference) "bs_variables.less";
-@import "components/variables.less";
+
 
 // Reset and dependencies
-@import "bs_normalize.less";
-@import "components/scafolding.less";
+// Core variables and mixins
+@import (reference) "components/bs_mixins.less";
+@import "components/bs_normalize.less";
+@import (reference) "components/bs_variables.less";
+@import "components/bs_scaffolding.less";
 
-// Core CSS
-//@import "bs_scaffolding.less";
 
-// Layout
-@import "bs_clearfix.less";
-@import "bs_center-block.less";
-@import "bs_grid-framework.less";
-@import "bs_grid.less";
+
+@import "scafolding.less";
+@import "media.less";
+@import "fonts.less";
 
 // Components
-@import "components/page-header.less";
-@import "components/page-main.less";
-@import "components/page-footer.less";
-@import "components/media.less";
+@import "page-header.less";
+@import "page-main.less";
+@import "page-footer.less";
+
 
