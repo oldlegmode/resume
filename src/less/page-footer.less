@@ -1,0 +1,129 @@
+.page-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #223;
+
+  .make-row (12);
+  .clearfix ();
+  &__copyright-wrap {
+    position: relative;
+
+    height: 40px;
+
+    text-align: left;
+
+    color: #eee;
+
+    .make-xs-column (4);
+    .make-sm-column (6);
+    .make-md-column (6);
+    .make-lg-column (6);
+  }
+  &__copyright-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding-left: 30px;
+  }
+  &__social-wrap {
+    .make-xs-column (8);
+    .make-sm-column (6);
+    .make-md-column (6);
+    .make-lg-column (6);
+  }
+  &__social-list {
+    float: right;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
+
+    list-style: none;
+  }
+  &__social-li {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+
+    border-radius: 50%;
+    background-color: darken(#fff, 30%);
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__social-link {
+    position: relative;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    font-family: 'icon';
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    color: #000;
+   /*  &:after {
+     position: absolute;
+     top: 0;
+     left: 0;
+   
+     display: block;
+     width: 40px;
+     height: 40px;
+   
+   
+     font-family: 'icon';
+     text-decoration: none;
+     color: #000;
+     font-size: 2.5rem;
+     line-height: 3.8rem;
+
+   } */
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
+    &:active,
+    &:focus,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+  &__social-link--fb:hover {
+    color: blue;
+  }
+  &__social-link--google:hover {
+    color: #BF3030;
+  }
+  &__social-link--twitter:hover {
+    color: lighten(blue, 10%);
+  }
+/*   &__social-link--git {
+  &:after {
+    content: "\f113";
+  }
+}
+&__social-link--fb {
+  &:after {
+    content: "\f30c";
+  }
+}
+&__social-link--google {
+  &:after {
+    content: "\f30f";
+  }
+}
+&__social-link--twitter {
+  &:after {
+    content: "\f099";
+    line-height: 3.8rem;
+  }
+} */
+}

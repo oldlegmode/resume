@@ -1,0 +1,441 @@
+.page-main {
+  &__about-container {
+    .make-row(12);
+    .clearfix();
+
+    padding-top: 90px;
+    padding-bottom: 120px;
+    border-top: 1px solid #ddd;
+
+    background-color: rgba(171, 171, 171, .15);
+  }
+  &__contacts-container {
+    .make-row(12);
+    .clearfix();
+    
+    padding-top: 90px;
+    padding-bottom: 120px;
+    border-top: 1px solid #ddd;
+  }
+  &__portfolio-container {
+    .make-row(12);
+    .clearfix();
+    padding-top: 90px;
+    padding-bottom: 120px;
+    border-top: 1px solid #ddd;
+
+    background-color: rgba(171, 171, 171, .15);
+  }
+}
+
+.about { // About
+  &__wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+    .make-md-column (12);
+    .make-lg-column (12);
+
+    min-height: 500px;
+  }
+  &__header {
+    .clearfix();
+
+    
+    text-align: center;
+    text-transform: lowercase;
+  }
+  &__info-container {
+    .make-row(12);
+    .clearfix();
+  }
+  &__photo-wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+    
+    .make-md-column-offset (1);
+    .make-md-column (3);
+
+    .make-lg-column-offset (1);
+    .make-lg-column (3);
+
+    text-align: center;
+
+/*     &::after {
+  content: '';
+
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+
+  text-align: center;
+
+  background-color: #777;
+} */
+  }
+  &__photo-header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: lowercase;
+  }
+  &__photo-img {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  }
+  &__who-i-am-wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+
+    .make-md-column-offset (0.5);
+    .make-md-column (3);
+
+    .make-lg-column-offset (0.5);
+    .make-lg-column (3);
+    
+  }
+  &__who-i-am-header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: lowercase;
+  }
+  &__skills-wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+
+    .make-md-column-offset (0.5);
+    .make-md-column (3);
+
+    .make-lg-column-offset (0.5);
+    .make-lg-column (3);
+  }
+  &__skills-header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: lowercase;
+
+  }
+  &__skills-list {
+    list-style: none;
+  }
+  &__skills-li {
+
+  }
+}
+
+.page-main { //Contacts
+  &__contact-wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+
+    .make-md-column-offset (2);
+    .make-md-column (8);
+
+    .make-lg-column-offset (3);
+    .make-lg-column (6);
+
+
+  }
+  &__contact-header {
+    margin-bottom: 50px;
+
+    text-align: center;
+    text-transform: lowercase;
+  }
+  &__contact-form {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid rgba(171, 171, 171, 0.4);
+    border-radius: 10px;
+
+    background-color: rgba(171, 171, 171, 0.15);
+
+    box-shadow: 0 3px 20px rgba(171, 171, 171, 0.5);
+  }
+  &__label {
+    position: relative;
+
+    display: block;
+    margin-bottom: 5px;
+    
+    &--correct::after {
+      content: '\2714';
+
+      position: absolute;
+      right: -20px;
+      top: 25px;
+      z-index: 1000;
+
+      color: green;
+      font-size: 2rem;
+    }
+    &--wrong::after {
+      content: '\2718';
+
+      position: absolute;
+      right: -20px;
+      top: 25px;
+      z-index: 1000;
+
+      color: red;
+      font-size: 2rem;
+    }
+  }
+  &__label--help {
+    display: block;
+    padding: 5px;
+    border: 1px solid #666;
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    font-weight: bold;
+    color: #444;
+
+    @media (max-width: @screen-sm-max) {
+      position: relative;
+      margin-top: -10px;
+    }
+    @media (min-width: @screen-sm-min) {
+      position: absolute;
+      top: 85%;
+      right: 10px;
+      z-index: 1000;
+
+      max-width: 210px;
+    }
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: -16px;
+      left: 10px;
+
+      box-sizing: content-box;
+
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-bottom: 8px solid #666;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      border-top: 8px solid transparent;
+    }
+  }
+  &__label--name,
+  &__label--surname {
+    display: inline-block;
+  }
+  @media (max-width: @screen-sm-max) {
+   &__label--name {
+     width: 100%;
+   }
+   &__label--surname {
+     width: 100%;
+    }
+  }
+  @media (min-width: @screen-sm-min) {
+    &__label--name {
+      width: 47%;
+      margin-right: 5%;
+    }
+    &__label--surname {
+      width: 47%;
+    }
+  }
+  &__contact-input {
+    padding: 10px;
+    border: 1px solid lighten(#689da2, 30%);
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0.03);
+
+    &:focus {
+      outline: none;
+
+      box-shadow: 1px 1px 2px 1px lighten(#689da2, 25%);
+
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &__contact-input--name {
+    width: 100%;
+  }
+  &__contact-input--surname {
+    width: 100%;
+  }
+  &__contact-input--email {
+    width: 100%;
+  }
+  &__contact-input--sabject {
+    width: 100%;
+  }
+  &__contact-input--message {
+    width: 100%;
+    height: 120px;
+  }
+  &__contact-btn {
+    display: block;
+    padding: 10px 40px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 5px;
+
+    color: #777;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: lighten(#689da2, 25%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
+    &:hover {
+      color: #eee;
+
+      background-color: lighten(#689da2, 15%);
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
+    }
+    &:active {
+      outline: none;
+
+      color: #eee;
+
+      background-color: #689da2;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    &:focus,
+    &:visited {
+      outline: none;
+    }
+  }
+  &__contact-btn--disable {
+    color: #bbb;
+
+
+    background-color: rgba(0, 0, 0, 0.05);
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      color: #bbb;
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.05);
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
+    }
+  }
+}
+
+.page-main {
+  &__portfolio-wrap {
+    .make-xs-column (12);
+    .make-sm-column (12);
+    .make-md-column (12);
+    .make-lg-column (12);
+
+    text-align: center;
+  }
+  &__portfolio-header {
+    margin-bottom: 50px;
+
+    text-transform: lowercase;
+  }
+  &__portfolio-exemples-inner {
+    .make-row (12);
+    .clearfix();
+
+    text-align: center;
+  }
+
+}
+
+.portfolio-exemple {
+  &__item-wrap {
+    position: relative;
+
+    display: inline-block;
+    
+
+    width: 260px;
+    min-height: 260px;
+    overflow: hidden;
+
+    background-image: url('../img/bikeshop.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 100%;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  &__item-info-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  &__item-info-wrap--visible {
+    display: block;
+  }
+  &__item-header {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__item-description {
+    padding: 0 10px 10px;
+
+    color: #eee;
+  }
+  &__item-link {
+    display: inline-block;
+    padding: 5px 15px;
+
+    border: 3px solid #22D0E0;
+
+    border-radius: 5px;
+
+    color: #22D0E0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 20px #689da2;
+
+    &:hover {
+      border: 3px solid lighten(#22D0E0,20%);
+      color: #7be3ed;
+      text-decoration: none;
+    }
+    &:active {
+      border: 3px solid darken(#22D0E0,20%);
+      color: #137f89;
+      text-decoration: none;
+    }
+    &:visited,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      color: #22D0E0;
+    }
+  }
+}

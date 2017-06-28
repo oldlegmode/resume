@@ -1,0 +1,78 @@
+<main class="page-main">
+  <div class="page-main__about-container">
+    <section id="about" class="about__wrap">
+      <h2 class="about__header">Обо мне</h2>
+      <div class="about__info-container">
+        <div class="about__photo-wrap">
+          <h3 class="about__photo-header">Фото</h3>
+          <!-- <div class="about__photo-img">
+            
+          </div> -->
+
+          <img src="img/myPhoto.jpg" alt="My photo" class="about__photo-img">
+        </div>
+        <div class="about__who-i-am-wrap">
+          <h3 class="about__who-i-am-header">Немного о себе</h3>
+          <p class="about__who-i-am-text">Ищу возможность опробовать новые знания и навыки на практике</p>
+          <p class="about__who-i-am-text"></p>
+        </div>
+        <div class="about__skills-wrap">
+          <h3 class="about__skills-header">Навыки</h3>
+          <ul class="about__skills-list">
+            <li class="about__skills-li">HTML</li>
+            <li class="about__skills-li">CSS</li>
+            <li class="about__skills-li">JavaScript</li>
+            <li class="about__skills-li">jQuery</li>
+            <li class="about__skills-li">Adobe Photoshop</li>
+            <li class="about__skills-li">Bootstrap</li>
+            <li class="about__skills-li">Git</li>
+            <li class="about__skills-li">Grunt</li>
+            <li class="about__skills-li">Gulp</li>
+            <li class="about__skills-li">Less</li>
+            <li class="about__skills-li">Sass</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="page-main__contacts-container">
+    <section id="contact" class="page-main__contact-wrap">
+      <h2 class="page-main__contact-header">Как со мной связаться</h2>
+      <form id="form-contact" action="#" class="page-main__contact-form" method="post">
+        <label for="name" class="page-main__label page-main__label--name" required>Имя
+        <input id="name" type="text" class="page-main__contact-input page-main__contact-input--name " pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я]{1,15}$" required>
+        </label>
+        <label for="surname" class="page-main__label page-main__label--surname">Фамилия
+        <input id="surname" type="text" class="page-main__contact-input page-main__contact-input--surname" pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я]{1,20}$" required>
+        </label>
+
+        <label for="email" class="page-main__label">E-mail
+        <input id="email" type="email" class="page-main__contact-input page-main__contact-input--email"  pattern="\S[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{1,4}\S" required>
+
+        </label>
+        <label for="sabject" class="page-main__label">Тема
+        <input id="sabject" type="text" class="page-main__contact-input page-main__contact-input--sabject">
+        </label>
+        <label for="message" class="page-main__label">Сообщение
+        <textarea name="message" id="" cols="30" rows="10" class="page-main__contact-input page-main__contact-input--message" required
+></textarea>
+        </label>
+        <input id="submit" type="submit" class="page-main__contact-btn" value="Отправить">
+      </form>
+    </section>
+  </div>
+  <div class="page-main__portfolio-container">
+    <section id="portfolio" class="page-main__portfolio-wrap">
+      <h2 class="page-main__portfolio-header">Примеры моих работ</h2>
+      <div class="page-main__portfolio-exemples-inner">
+        <arcticle class="portfolio-exemple__item-wrap">
+          <div class="portfolio-exemple__item-info-wrap animated">
+            <h4 class="portfolio-exemple__item-header">Bike Shop</h4>
+            <p class="portfolio-exemple__item-description">Лендинг. Пример верстки из PSD и написания нативного JavaScript</p>
+            <a href="//www.myportfolioperformance.esy.es/" class="portfolio-exemple__item-link">Посмотреть</a>
+          </div>
+        </arcticle>
+      </div>
+    </section>
+  </div>
+</main>
